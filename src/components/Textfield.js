@@ -13,11 +13,39 @@ const Textfield = React.createClass({
 
     render: function () {
       return (
-        <div>
-          <input onChange={this.handleChange} type={"text"} value={this.state.value} />
-          <input type={"text"} value={"I'm read-only, am under React's control, but raise a warning."} />
-          <input onChange={this.handleChange} defaultValue={"I'm changeable but am not under React's control."} />
-          <input readOnly={true} type={"text"} value={"I'm read-only and under React's control."} />
+        <div className={"container"}>
+            <form className={"bs-example bs-example-form"}>
+              <div className={"input-group-large"}>
+                  <input
+                  className={"form-control"}
+                  onChange={this.handleChange}
+                  type={"text"}
+                  value={this.state.value}
+                />
+              </div>
+                <div className={"input-group-large"}>
+                <input
+                  className={"form-control"}
+                  type={"text"}
+                  value={"I'm read-only, am under React's control, but raise a warning."}
+                />
+              </div>
+              <div className={"input-group-large"}>
+                <input
+                  className={"form-control"}
+                  onChange={this.handleChange}
+                  defaultValue={"I'm changeable but am not under React's control."}
+                />
+              </div>
+              <div className={"input-group-large"}>
+                <input
+                  className={"form-control"}
+                  readOnly={true}
+                  type={"text"}
+                  value={"I'm read-only and under React's control."}
+                />
+              </div>
+            </form>
         </div>
       );
     }

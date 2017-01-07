@@ -33,8 +33,8 @@ const Textfield = React.createClass({
               <div className={"input-group-large"}>
                 <input
                   className={"form-control"}
-                  onChange={this.handleChange}
                   defaultValue={"I'm changeable but am not under React's control."}
+                  type={"text"}
                 />
               </div>
               <div className={"input-group-large"}>

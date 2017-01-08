@@ -14,6 +14,7 @@ const Textfield = React.createClass({
     render: function () {
       return (
         <div className={"container"}>
+          <h1>textfield</h1>
             <form className={"bs-example bs-example-form"}>
               <div className={"input-group-large"}>
                   <input

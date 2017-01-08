@@ -13,7 +13,7 @@ const Textarea = React.createClass({
 
       render: function () {
         return (
-          <div className={"container"}>
+          <div>
             <h1>textarea</h1>
               <form className={"bs-example bs-example-form"}>
                 <div className={"input-group-large"}>

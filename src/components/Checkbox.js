@@ -17,11 +17,22 @@ const Checkbox = React.createClass({
           </span>
           {"I'm changeable and under React's control."}
         </div>
+
         <div className={"input-group"}>
           <span className={"input-group-addon"}>
             <input type={"checkbox"} checked={true} />
           </span>
           {"I'm read only, am under React's control, but raise a warning."}
+        </div>
+
+        <div className={"input-group"}>
+          <span className={"input-group-addon"}>
+          <input
+            defaultChecked={true}
+            type="checkbox"
+          />
+          </span>
+          {"I'm changeable but am not under React's control."}
         </div>
       </div>
     );

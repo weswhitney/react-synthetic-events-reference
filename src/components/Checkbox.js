@@ -4,8 +4,10 @@ const Checkbox = React.createClass({
   getInitialState: function () {
     return {checked: false};
   },
-  handleChange: function () {
-    return this.setState({checked: !this.state.checked});
+  handleChange: function (event) {
+    const nextChecked = event.target.checked
+
+    this.setState({checked: nextChecked});
   },
   render: function () {
     return (

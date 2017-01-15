@@ -7,16 +7,25 @@ const Form = React.createClass({
       password: ""
     };
   },
-  handleChange: function () {
+  handleChange: function (event) {
     const nextState = { [event.target.name]: event.target.value };
 
     this.setState(nextState);
+  },
+  handleSubmit: function (event) {
+    event.preventDefault();
+    alert("you're logged in")
+    // prehaps send a JSON string to a server...
+    JSON.stringify({
+      password: this.state.password,
+      username: this.state.username
+    });
   },
   render: function () {
     return (
       <div>
         <h1>form</h1>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label>
             Username:
             <input

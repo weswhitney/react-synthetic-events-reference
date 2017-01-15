@@ -11,6 +11,7 @@ const Form = React.createClass({
     const nextState = { [event.target.name]: event.target.value };
 
     this.setState(nextState);
+    console.log(nextState);
   },
   handleSubmit: function (event) {
     event.preventDefault();

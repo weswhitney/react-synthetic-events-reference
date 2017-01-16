@@ -22,13 +22,13 @@ const Radio = React.createClass({
               onChange={this.handleChange}
               type="radio"
               value="yes"
-            />
+            />Yes
             <input
               checked={this.state.value === 'no'}
               onChange={this.handleChange}
               type="radio"
               value="no"
-            />
+            />No
           </span>
           {"We're changeable and under React's control."}
         </div>

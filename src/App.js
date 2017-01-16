@@ -14,15 +14,19 @@ class App extends Component {
   render() {
     return (
       <div className={"container"} >
-      <Checkbox />
-      <FocusEvents />
-      <Form />
-      <KeyboardEvents />
-      <MouseEvents />
-      <Radio />
-      <Select />
-      <Textarea />
-      <Textfield />
+        <div className="jumbotron">
+        <h1>React Events</h1>
+        <p>react events cheatsheet</p>
+        </div>
+        <Checkbox />
+        <FocusEvents />
+        <Form />
+        <KeyboardEvents />
+        <MouseEvents />
+        <Radio />
+        <Select />
+        <Textarea />
+        <Textfield />
     </div>
     );
   }

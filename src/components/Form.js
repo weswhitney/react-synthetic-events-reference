@@ -25,28 +25,32 @@ const Form = React.createClass({
   render: function () {
     return (
       <div className="panel panel-default">
-        <div className="panel-body">
+        <div className="panel-body form-group">
           <h1>form</h1>
           <form onSubmit={this.handleSubmit}>
-            <label>
-              Username:
-              <input
-                name="username"
-                onChange={this.handleChange}
-                type="text"
-                value={this.state.username}
-              />
-            </label>
+            <div className="form-group">
+              <label>
+                Username:
+                <input
+                  className="form-control"
+                  name="username"
+                  onChange={this.handleChange}
+                  type="text"
+                  value={this.state.username}
+                />
+              </label>
 
             <label>
               Password:
               <input
+                className="form-control"
                 name="password"
                 onChange={this.handleChange}
                 type="password"
                 value={this.state.password}
               />
             </label>
+          </div>
             <input type="submit" value="Log in"/>
           </form>
         </div>

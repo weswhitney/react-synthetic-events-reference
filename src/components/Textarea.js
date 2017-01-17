@@ -14,7 +14,7 @@ const Textarea = React.createClass({
       render: function () {
         return (
           <div className="panel panel-default">
-            <div className="panel panel-body">
+            <div className="panel-body">
               <h1>textarea</h1>
                 <form className={"bs-example bs-example-form"}>
                   <div className={"input-group-large"}>

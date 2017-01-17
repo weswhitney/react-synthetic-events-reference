@@ -40,13 +40,13 @@ const Radio = React.createClass({
                 name="1"
                 type="radio"
                 value="yes"
-              />
+              />Yes
               <input
                 checked={true}
                 name="1"
                 type="radio"
                 value="no"
-              />
+              />No
             </span>
             {"We're read-only, are under React's control, but raise a warning."}
           </div>
@@ -58,13 +58,13 @@ const Radio = React.createClass({
                 name="2"
                 type="radio"
                 value="yes"
-              />
+              />Yes
               <input
                 defaultChecked={false}
                 name="2"
                 type="radio"
                 value="no"
-              />
+              />No
             </span>
             {"We're are changeable but are not under React's control."}
           </div>
@@ -77,14 +77,14 @@ const Radio = React.createClass({
                 readOnly={true}
                 type="radio"
                 value="yes"
-              />
+              />Yes
               <input
                 checked={false}
                 name="3"
                 readOnly={true}
                 type="radio"
                 value="no"
-              />
+              />No
             </span>
             {"We're read-only and are under React's control."}
           </div>

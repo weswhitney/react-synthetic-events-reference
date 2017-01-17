@@ -12,7 +12,7 @@ const Select = React.createClass({
   render: function () {
     return (
       <div className="panel panel-default">
-        <div className="panel panel-body">
+        <div className="panel-body">
           <h1>select</h1>
 
           <div>

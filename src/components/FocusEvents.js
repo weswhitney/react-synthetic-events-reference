@@ -16,15 +16,19 @@ const FocusEvents = React.createClass({
   },
   render: function () {
     return (
-      <div className={"input-group"}>
-        <h1>focus events</h1>
-        <input
-          className={"form-control"}
-          onBlur={this.handleBlur}
-          onFocus={this.handleFocus}
-          readOnly={true}
-          value={this.state.value}
-        />
+      <div className="panel panel-default">
+        <div className="panel-body">
+          <div className="input-group">
+            <h1>focus events</h1>
+            <input
+              className={"form-control"}
+              onBlur={this.handleBlur}
+              onFocus={this.handleFocus}
+              readOnly={true}
+              value={this.state.value}
+            />
+          </div>
+        </div>
       </div>
     );
   }

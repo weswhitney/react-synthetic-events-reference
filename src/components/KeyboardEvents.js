@@ -29,27 +29,57 @@ const KeyboardEvents = React.createClass({
   },
   render: function () {
     return (
-      <div>
+      <div className="panel panel-default">
+        <div className="panel-body">
+          <h1>keyboard events</h1>
 
-        <h1>keyboard events</h1>
+          <table className="table table-bordered">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Trigger(s)</th>
+                <th><code>event.which</code></th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><code>onKeyDown</code></td>
+              <td>When pressed down. Report while holding.</td>
+              <td>Key code</td>
+            </tr>
+            <tr>
+              <td><code>onKeyPress</code></td>
+              <td>When inserted. Repeats while inserting.</td>
+              <td>Character code</td>
+            </tr>
+            <tr>
+              <td><code>onKeyUp</code></td>
+              <td>When released up.</td>
+              <td>Key code</td>
+            </tr>
+            </tbody>
+          </table>
 
-        <textarea
-          onChange={this.handleChange}
-          onKeyDown={this.handleKeyDown}
-          onKeyPress={this.handleKeyPress}
-          onKeyUp={this.handleKeyUp}
-          value={this.state.value}
-        />
+          <textarea
+            className="form-control"
+            rows="3"
+            onChange={this.handleChange}
+            onKeyDown={this.handleKeyDown}
+            onKeyPress={this.handleKeyPress}
+            onKeyUp={this.handleKeyUp}
+            value={this.state.value}
+          />
 
-        <button onClick={this.handleClick}>
-          Clear
-        </button>
+          <button onClick={this.handleClick} type="button" className="btn btn-default">
+            Clear
+          </button>
 
-        <h2>history</h2>
+          <h2>history</h2>
 
-        {this.state.events.map((e, index) => {
-          return <div key={index}>{e}</div>;
-        })}
+          {this.state.events.map((e, index) => {
+            return <div key={index}>{e}</div>;
+          })}
+        </div>
       </div>
     );
   }

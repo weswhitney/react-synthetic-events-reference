@@ -28,20 +28,20 @@ const MouseEvents = React.createClass({
   },
   render: function () {
     return (
-      <div>
-
-        <h1>mouse events</h1>
-
-        <div
-          onClick={this.handleClick}
-          onMouseEnter={this.handleMouseEnter}
-          onMouseLeave={this.handleMouseLeave}
-          style={{backgroundColor: 'lightblue', height: '300px', width: '300px'}}
-        />
-        <div>clicks: {this.state.clicks}</div>
-        <div>location: {this.state.location}</div>
-        <div>pageX: {this.state.pageX}</div>
-        <div>pageY: {this.state.pageY}</div>
+      <div className="panel panel-default">
+        <div className="panel-body">
+          <h1>mouse events</h1>
+          <div
+            onClick={this.handleClick}
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+            style={{backgroundColor: 'lightblue', height: '300px', width: '300px'}}
+          />
+          <div>clicks: {this.state.clicks}</div>
+          <div>location: {this.state.location}</div>
+          <div>pageX: {this.state.pageX}</div>
+          <div>pageY: {this.state.pageY}</div>
+        </div>
       </div>
     );
   }
